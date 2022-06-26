@@ -24,6 +24,13 @@ def predict():
             pass
     return render_template('index.html', status=500, res="Internal Server Error")
 
+@app.route('/pengembang')
+def pengembang():
+    return render_template('pengembang.html')
+
+@app.route('/cara')
+def cara():
+    return render_template('cara.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
